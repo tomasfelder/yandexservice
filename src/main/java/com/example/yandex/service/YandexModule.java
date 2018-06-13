@@ -2,19 +2,19 @@ package com.example.yandex.service;
 
 import com.google.gson.Gson;
 
-public class ServiceModule {
+public class YandexModule {
 
-    private static final ServiceModule ourInstance = new ServiceModule();
+    private static final YandexModule ourInstance = new YandexModule();
 
     private ResultConverter resultConverter;
     private TranslatorService translatorService;
     private YandexApiConnection apiConnection;
 
-    public static ServiceModule getInstance() {
+    public static YandexModule getInstance() {
         return ourInstance;
     }
 
-    private ServiceModule() {
+    private YandexModule() {
         initServices();
     }
 
